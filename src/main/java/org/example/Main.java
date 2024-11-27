@@ -25,8 +25,11 @@ public class Main {
 
 
 
+        WebElement p=driver.findElement(By.cssSelector("body app-root app-login button"));
 
-        WebElement p=driver.findElement(By.xpath("/html/body/app-root/app-login/button"));
+        System.out.println(p.getText());
+
+        //WebElement p=driver.findElement(By.xpath("/html/body/app-root/app-login/button"));
 
         //p.sendKeys("Selenium Java");
         Thread.sleep(2000);
